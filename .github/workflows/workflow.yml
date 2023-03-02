@@ -15,7 +15,8 @@ jobs:
           with:
             api-key: ${{secrets.SAFETY_API_KEY}}
             scan: true
-            file: requirements/requirements.txt
+            requirements: |
+              requirements.txt
 
   build:
     runs-on: ubuntu-latest
