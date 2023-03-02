@@ -15,7 +15,6 @@ pytest-cov = "^4.0.0"
 flake8 = "^6.0.0"
 
 [tool.poetry.scripts]
-django = "python manage.py"
 
 [build-system]
 requires = ["poetry-core"]
