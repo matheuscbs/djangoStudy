@@ -21,7 +21,11 @@ jobs:
           pip install --upgrade pip
           pip install poetry
           poetry install        
-   
+
+    - name: Run flake8 to improve the Quality of Code
+      run: |
+        poetry run flake8
+
     - name: Run tests and generate coverage report
       run: |
         poetry run pytest --cov=. --rootdir=tests
