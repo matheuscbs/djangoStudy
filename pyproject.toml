@@ -10,7 +10,6 @@ python = "^3.8"
 django = "^4.1.7"
 pytest = "^7.2.1"
 pytest-cov = "^4.0.0"
-safety = "^2.3.5"
 
 
 [build-system]

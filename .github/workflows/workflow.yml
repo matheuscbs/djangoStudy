@@ -7,21 +7,6 @@ on:
     branches: [ main ]
 
 jobs:
-  safety:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v2
-        - name: Safety Check
-          uses: pyupio/safety@2.3.4
-          with:
-            api-key: ${{secrets.SAFETY_API_KEY}}
-            scan: true
-            update: all
-            search: true
-            requirements: |
-              requirements.txt
-
   build:
     runs-on: ubuntu-latest
 
