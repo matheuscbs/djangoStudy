@@ -7,6 +7,13 @@ on:
     branches: [ main ]
 
 jobs:
+  safety:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: pyupio/safety@2.3.4
+          with:
+            api-key: ${{secrets.SAFETY_API_KEY}}
+            
   build:
     runs-on: ubuntu-latest
 
